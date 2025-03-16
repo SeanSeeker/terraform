@@ -1,0 +1,9 @@
+# 忽略Terraform相关文件
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+
+# 忽略IDE配置文件
+.vscode/
+.idea/
