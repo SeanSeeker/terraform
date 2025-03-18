@@ -1,0 +1,207 @@
+{
+  "version": 4,
+  "terraform_version": "1.11.1",
+  "serial": 38,
+  "lineage": "ac8c1547-8c17-cca4-787e-530aa739be16",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "volcengine_route_table",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/volcengine/volcengine\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "description": "system route table created by vpc",
+            "id": "vtb-5ga1z314b8xs73inqkgw91yw",
+            "project_name": "default",
+            "route_table_name": "prod_sh_route_table",
+            "timeouts": null,
+            "vpc_id": "vpc-5ga1z12376yo73inqlf2rt8a"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "volcengine_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.network",
+      "mode": "managed",
+      "type": "volcengine_route_table",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/volcengine/volcengine\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "description": "",
+            "id": "vtb-22k23nh0vay2o7r2qr17ku78g",
+            "project_name": "default",
+            "route_table_name": "prod_sh_route_table",
+            "timeouts": null,
+            "vpc_id": "vpc-5gnoypzqtvcw73inqke9ivu2"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.network.volcengine_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.network",
+      "mode": "managed",
+      "type": "volcengine_subnet",
+      "name": "subnets",
+      "provider": "provider[\"registry.terraform.io/volcengine/volcengine\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "cidr_block": "10.0.0.0/24",
+            "creation_time": "2025-03-18T02:00:51+08:00",
+            "description": "",
+            "enable_ipv6": false,
+            "id": "subnet-3qde9del5y8sg7prmkzvtg1kt",
+            "ipv6_cidr_block": null,
+            "status": "Available",
+            "subnet_name": "prod_sh_cn-shanghai-a_1",
+            "tags": [],
+            "timeouts": null,
+            "vpc_id": "vpc-5gnoypzqtvcw73inqke9ivu2",
+            "zone_id": "cn-shanghai-a"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.network.volcengine_vpc.main"
+          ]
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "cidr_block": "10.0.1.0/24",
+            "creation_time": "2025-03-18T02:00:44+08:00",
+            "description": "",
+            "enable_ipv6": false,
+            "id": "subnet-3qde93fhjg9a87prml0slsl43",
+            "ipv6_cidr_block": null,
+            "status": "Available",
+            "subnet_name": "prod_sh_cn-shanghai-a_2",
+            "tags": [],
+            "timeouts": null,
+            "vpc_id": "vpc-5gnoypzqtvcw73inqke9ivu2",
+            "zone_id": "cn-shanghai-a"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.network.volcengine_vpc.main"
+          ]
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "cidr_block": "10.0.2.0/24",
+            "creation_time": "2025-03-18T02:00:49+08:00",
+            "description": "",
+            "enable_ipv6": false,
+            "id": "subnet-3qde98h0dtb0g7prml1b8juto",
+            "ipv6_cidr_block": null,
+            "status": "Available",
+            "subnet_name": "prod_sh_cn-shanghai-b_1",
+            "tags": [],
+            "timeouts": null,
+            "vpc_id": "vpc-5gnoypzqtvcw73inqke9ivu2",
+            "zone_id": "cn-shanghai-b"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.network.volcengine_vpc.main"
+          ]
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "cidr_block": "10.0.3.0/24",
+            "creation_time": "2025-03-18T02:00:42+08:00",
+            "description": "",
+            "enable_ipv6": false,
+            "id": "subnet-3qde914m8pybk7prml1j3y6tw",
+            "ipv6_cidr_block": null,
+            "status": "Available",
+            "subnet_name": "prod_sh_cn-shanghai-b_2",
+            "tags": [],
+            "timeouts": null,
+            "vpc_id": "vpc-5gnoypzqtvcw73inqke9ivu2",
+            "zone_id": "cn-shanghai-b"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19",
+          "dependencies": [
+            "module.network.volcengine_vpc.main"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.network",
+      "mode": "managed",
+      "type": "volcengine_vpc",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/volcengine/volcengine\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "account_id": "2103773126",
+            "associate_cens": [],
+            "auxiliary_cidr_blocks": [],
+            "cidr_block": "10.0.0.0/16",
+            "creation_time": "2025-03-18T02:00:38+08:00",
+            "description": "",
+            "dns_servers": [],
+            "enable_ipv6": false,
+            "id": "vpc-5gnoypzqtvcw73inqke9ivu2",
+            "ipv6_cidr_block": "",
+            "nat_gateway_ids": [],
+            "project_name": "default",
+            "route_table_ids": [
+              "vtb-22k23nh0vay2o7r2qr17ku78g",
+              "vtb-5gnoyryrxxc073inqk1eeeew"
+            ],
+            "security_group_ids": [
+              "sg-5gnoyvwu61a873inqki9t0mr"
+            ],
+            "status": "Available",
+            "subnet_ids": [
+              "subnet-3qde914m8pybk7prml1j3y6tw",
+              "subnet-3qde93fhjg9a87prml0slsl43",
+              "subnet-3qde98h0dtb0g7prml1b8juto",
+              "subnet-3qde9del5y8sg7prmkzvtg1kt"
+            ],
+            "tags": [],
+            "timeouts": null,
+            "update_time": "2025-03-18T02:00:51+08:00",
+            "vpc_id": "vpc-5gnoypzqtvcw73inqke9ivu2",
+            "vpc_name": "prod_sh_vpc"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

@@ -20,7 +20,7 @@ resource "cloudflare_record" "records" {
   
   zone_id  = var.zone_id
   name     = each.value.name
-  value    = each.value.value
+  content  = each.value.value
   type     = each.value.type
   ttl      = lookup(each.value, "ttl", 1) # 1 = 自动
   proxied  = lookup(each.value, "proxied", false)

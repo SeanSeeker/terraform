@@ -12,20 +12,20 @@ module "network" {
   region_short            = var.region_short_map[var.region]
 }
 
-# Cloudflare DNS模块
-module "dns" {
-  source = "./modules/cloudflare/dns"
+# # Cloudflare DNS模块
+# module "dns" {
+#   source = "./modules/cloudflare/dns"
 
-  zone_id     = var.cloudflare_zone_id
-  domain      = var.domain_name
-  dns_records = [
-    {
-      name  = "www"
-      value = module.network.vpc_id # 示例：可以引用其他模块的输出
-      type  = "TXT"
-    }
-  ]
-}
+#   zone_id     = var.cloudflare_zone_id
+#   domain      = var.domain_name
+#   dns_records = [
+#     {
+#       name  = "www"
+#       value = "123.123.123.123" # 测试A记录
+#       type  = "A"
+#     }
+#   ]
+# }
 
 # 后续可以添加其他模块，如：
 # module "ecs" {

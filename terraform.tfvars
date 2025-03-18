@@ -1,7 +1,7 @@
 # Cloudflare配置
 # 已替换为实际值
-cloudflare_zone_id = "your-actual-zone-id" # 在Cloudflare控制面板的「概述」页面右下角找到
-domain_name = "example.com"
+cloudflare_zone_id = "302b37d92355af29b32b2dae4e3d6aba" # 在Cloudflare控制面板的「概述」页面右下角找到
+domain_name = "seanseeker.com"
 
 # 不推荐在此设置API Token，请使用环境变量CLOUDFLARE_API_TOKEN
 # export CLOUDFLARE_API_TOKEN="您的API令牌"
